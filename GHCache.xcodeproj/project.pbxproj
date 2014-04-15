@@ -22,7 +22,9 @@
 		70624B4418AB16AD0097D549 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70624B2C18AB16AD0097D549 /* UIKit.framework */; };
 		70624B4C18AB16AD0097D549 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 70624B4A18AB16AD0097D549 /* InfoPlist.strings */; };
 		70624B4E18AB16AD0097D549 /* GHCacheTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 70624B4D18AB16AD0097D549 /* GHCacheTests.m */; };
-		70624B5918AB19270097D549 /* GHCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 70624B5818AB19270097D549 /* GHCache.m */; };
+		70C37E5118FCD56700CB76BC /* GHCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 70C37E4C18FCD56700CB76BC /* GHCache.m */; };
+		70C37E5218FCD56700CB76BC /* NSArray+nullData.m in Sources */ = {isa = PBXBuildFile; fileRef = 70C37E4E18FCD56700CB76BC /* NSArray+nullData.m */; };
+		70C37E5318FCD56700CB76BC /* NSDictionary+nullData.m in Sources */ = {isa = PBXBuildFile; fileRef = 70C37E5018FCD56700CB76BC /* NSDictionary+nullData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,8 +58,12 @@
 		70624B4918AB16AD0097D549 /* GHCacheTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GHCacheTests-Info.plist"; sourceTree = "<group>"; };
 		70624B4B18AB16AD0097D549 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		70624B4D18AB16AD0097D549 /* GHCacheTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHCacheTests.m; sourceTree = "<group>"; };
-		70624B5718AB19270097D549 /* GHCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHCache.h; sourceTree = "<group>"; };
-		70624B5818AB19270097D549 /* GHCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHCache.m; sourceTree = "<group>"; };
+		70C37E4B18FCD56700CB76BC /* GHCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GHCache.h; sourceTree = "<group>"; };
+		70C37E4C18FCD56700CB76BC /* GHCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GHCache.m; sourceTree = "<group>"; };
+		70C37E4D18FCD56700CB76BC /* NSArray+nullData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+nullData.h"; sourceTree = "<group>"; };
+		70C37E4E18FCD56700CB76BC /* NSArray+nullData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+nullData.m"; sourceTree = "<group>"; };
+		70C37E4F18FCD56700CB76BC /* NSDictionary+nullData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+nullData.h"; sourceTree = "<group>"; };
+		70C37E5018FCD56700CB76BC /* NSDictionary+nullData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+nullData.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,8 +93,12 @@
 		7025B0B518AC569500E8FFCD /* Cache */ = {
 			isa = PBXGroup;
 			children = (
-				70624B5718AB19270097D549 /* GHCache.h */,
-				70624B5818AB19270097D549 /* GHCache.m */,
+				70C37E4B18FCD56700CB76BC /* GHCache.h */,
+				70C37E4C18FCD56700CB76BC /* GHCache.m */,
+				70C37E4D18FCD56700CB76BC /* NSArray+nullData.h */,
+				70C37E4E18FCD56700CB76BC /* NSArray+nullData.m */,
+				70C37E4F18FCD56700CB76BC /* NSDictionary+nullData.h */,
+				70C37E5018FCD56700CB76BC /* NSDictionary+nullData.m */,
 				7025B0B918AC759C00E8FFCD /* text.png */,
 				7025B0BA18AC759C00E8FFCD /* text@2x.png */,
 			);
@@ -221,7 +231,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = GHCache;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = ghren;
 				TargetAttributes = {
 					70624B3F18AB16AD0097D549 = {
@@ -275,9 +285,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7025B0B818AC56C600E8FFCD /* GHCacheViewController.m in Sources */,
-				70624B5918AB19270097D549 /* GHCache.m in Sources */,
 				70624B3918AB16AD0097D549 /* GHCacheAppDelegate.m in Sources */,
+				70C37E5218FCD56700CB76BC /* NSArray+nullData.m in Sources */,
+				70C37E5318FCD56700CB76BC /* NSDictionary+nullData.m in Sources */,
 				70624B3518AB16AD0097D549 /* main.m in Sources */,
+				70C37E5118FCD56700CB76BC /* GHCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,7 +335,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -362,7 +373,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -420,7 +430,6 @@
 		70624B5518AB16AD0097D549 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GHCache.app/GHCache";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -443,7 +452,6 @@
 		70624B5618AB16AD0097D549 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GHCache.app/GHCache";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
